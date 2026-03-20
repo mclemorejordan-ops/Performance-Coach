@@ -17,7 +17,7 @@ jobs:
             "${{ secrets.SUPABASE_FUNCTION_URL }}" \
             -H "Content-Type: application/json" \
             -H "x-service-key: ${{ secrets.SUPABASE_ARCHIVE_SERVICE_KEY }}" \
-            -d '{"batch_size":1,"dry_run":true}')
+            -d '{"batch_size":1,"dry_run":false}')
 
           echo "HTTP $http_code"
           cat response.json
