@@ -1,0 +1,20 @@
+name: Archive Cycle
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  run-archive-cycle:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Invoke archive cycle
+        run: |
+          curl --fail-with-body \
+            -X POST \
+            "${{ secrets.SUPABASE_FUNCTION_URL }}" \
+            -H "Content-Type: application/json" \
+            -H "x-service-key: ${{ secrets.SUPABASE_ARCHIVE_SERVICE_KEY }}" \
+            -d '{"batch_size":1,"dry_run":true}'
