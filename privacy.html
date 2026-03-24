@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performance Coach Privacy Policy</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #0b0f17;
+            --panel: #141a26;
+            --text: #f5f7fb;
+            --muted: #b8c0cf;
+            --border: rgba(255, 255, 255, 0.12);
+            --accent: #6fe1b0;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(159, 134, 255, 0.18), transparent 28rem),
+                radial-gradient(circle at top right, rgba(111, 225, 176, 0.14), transparent 24rem),
+                var(--bg);
+            color: var(--text);
+        }
+        main {
+            max-width: 56rem;
+            margin: 0 auto;
+            padding: 3rem 1.25rem 5rem;
+        }
+        article {
+            background: rgba(20, 26, 38, 0.9);
+            border: 1px solid var(--border);
+            border-radius: 1.25rem;
+            padding: 1.75rem;
+        }
+        h1, h2 { margin-top: 0; }
+        h2 {
+            margin-top: 2rem;
+            color: var(--accent);
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        p, li {
+            color: var(--muted);
+            line-height: 1.65;
+        }
+        ul { padding-left: 1.2rem; }
+        a { color: var(--text); }
+        .meta { margin-bottom: 1.5rem; }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <p><a href="./index.html">← Back</a></p>
+            <h1>Performance Coach Privacy Policy</h1>
+            <p class="meta"><strong>Effective date:</strong> March 12, 2026</p>
+
+            <p>
+                Performance Coach is a fitness tracking app for routines, workout logs, progress, protein tracking,
+                weight tracking, and optional social features. This policy explains what information the app handles
+                and how that information is used.
+            </p>
+
+            <h2>Information We Handle</h2>
+            <ul>
+                <li>Account information such as your email address and authentication session.</li>
+                <li>Profile information such as your name, username, bio, and app preferences.</li>
+                <li>Fitness data you enter, including routines, workout logs, set data, attendance, weight logs, protein logs, and goals.</li>
+                <li>Social data, if you use social features, such as follows, activity events, likes, comments, notifications, and challenges.</li>
+                <li>Optional outdoor cardio tracking data such as distance, elapsed time, pace, location-derived movement, and motion activity while a tracked session is active.</li>
+                <li>Optional HealthKit workout write data when you choose to save a tracked outdoor cardio session to Apple Health.</li>
+            </ul>
+
+            <h2>How Information Is Stored</h2>
+            <ul>
+                <li>Performance Coach stores app state locally on your device so the app can load your data quickly and support local snapshots and backup export/import.</li>
+                <li>When you use an account, supported account, profile, routine, workout, and social data may also be stored in Supabase-backed cloud services used by the app.</li>
+                <li>Apple Health data is only written when you complete a tracked outdoor cardio session and choose to save that session through the app flow.</li>
+            </ul>
+
+            <h2>How Information Is Used</h2>
+            <ul>
+                <li>To authenticate your account and keep you signed in.</li>
+                <li>To sync your routines, workout history, and profile data across app sessions.</li>
+                <li>To power progress views, attendance history, nutrition tracking, and social features.</li>
+                <li>To calculate tracked outdoor cardio metrics such as distance and pace.</li>
+                <li>To write completed tracked outdoor cardio workouts to Apple Health if you grant HealthKit permission.</li>
+            </ul>
+
+            <h2>Permissions</h2>
+            <ul>
+                <li><strong>Location:</strong> used during active outdoor cardio tracking to estimate route movement, distance, and pace.</li>
+                <li><strong>Motion Activity:</strong> used during active outdoor cardio tracking to improve movement detection and reduce GPS drift.</li>
+                <li><strong>HealthKit:</strong> used to write completed tracked outdoor cardio workouts to Apple Health.</li>
+            </ul>
+
+            <h2>Backup, Export, and Import</h2>
+            <ul>
+                <li>The app supports exporting your local app data as a backup file.</li>
+                <li>The app supports importing a previously exported backup file.</li>
+                <li>Local rotating snapshots may also be stored on-device to support restore of recent local states.</li>
+            </ul>
+
+            <h2>Account Deletion</h2>
+            <p>
+                If you created an account in Performance Coach, you can request deletion in the app from the Settings support section.
+                Deleting your account is intended to permanently delete your account and associated cloud data handled by the app.
+            </p>
+
+            <h2>Data Sharing</h2>
+            <p>
+                Performance Coach uses Supabase infrastructure to support authentication and app-backed cloud data storage.
+                The app does not sell your personal information.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                For privacy questions, use the support information on the <a href="./support.html">Support</a> page.
+            </p>
+        </article>
+    </main>
+</body>
+</html>
